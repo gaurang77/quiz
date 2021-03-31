@@ -1,0 +1,113 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <style>
+        .congrats{
+            max-width: 300px;
+            color:rgb(238, 235, 46);
+            background-color:chocolate;
+            margin: 5px auto; 
+            text-align: center; 
+            height: 100px;
+            position: relative;  
+            display: none;
+        }
+        .close{
+            color:rgba(85, 255, 6, 0.685);
+            position: absolute;
+            top:0;
+            left: 0;
+            cursor:pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- top section-->
+    <div class="intro py-3 bg-white text-center">
+        <div class="container">
+            <h2 class="text-primary display-3 my-4">QUIZ</h2>
+        </div>
+    </div>
+    <!--RESULT SECTION-->
+    <div class="result d-none bg-light text-center">
+        <div class="container lead">
+            <p>you have scored <span class="text-primary display-4 p-3">0%</span></p>
+        </div>
+    </div>
+    <!--CONGRATULATIONS ON 100-->
+    <div class="congrats">      
+        <br>
+        CONGRATULATIONS FOR THE PERFECT SCORE
+        <span class="close">X</span> 
+    </div>
+    <!--QUIZ SECTION-->
+    <div class="quiz py-4 bg-primary">
+        <div class="container">
+            <h2 class="my-5 text-white">Here comes the QUESTIONS...</h2>
+
+            <form class="quiz-form text-light">
+
+                <div class="my-5">
+                    <p class="lead font-weight-normal">
+                        1.How do you win ?
+                    </p>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q1" value="A" checked>
+                        <label for="" class="form-check-label"> By not qitting</label> 
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                            <input type="radio" name="q1" value="B">
+                            <label for="" class="form-check-label"> By winning</label> 
+                    </div>
+                </div>
+                <div class="my-5">
+                    <p class="lead font-weight-normal">
+                        2.How do you learn ? </p>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q2" value="A" checked>
+                        <label for="" class="form-check-label"> By Memorising</label> 
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                            <input type="radio" name="q2" value="B">
+                            <label for="" class="form-check-label"> By Understanding</label> 
+                    </div>
+                </div>
+                <div class="my-5">
+                    <p class="lead font-weight-normal">
+                        3.What is 2+2 in our reality </p>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q3" value="A" checked>
+                        <label for="" class="form-check-label"> Maybe 4</label> 
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                            <input type="radio" name="q3" value="B">
+                            <label for="" class="form-check-label"> Definately 4</label> 
+                    </div>
+                </div>
+                <div class="my-5">
+                    <p class="lead font-weight-normal">
+                        4.If you have 3 cats and each of your cats gives birth to triplets, 
+                        how many cats do you have now...?  </p>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q4" value="A" checked>
+                        <label for="" class="form-check-label"> 3*3</label> 
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                            <input type="radio" name="q4" value="B">
+                            <label for="" class="form-check-label">3*3+4 </label> 
+                    </div>
+                </div>
+                <div class="text-centr">
+                    <input type="submit" class="btn btn-light">
+                </div>   
+            </form>
+
+        </div>
+    </div>
+<script src = "qu.js"></script>    
+</body>
+</html>
